@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    box-shadow: 2px 0px 8px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    top:0;
+    
+}
+
+.contenedor-links{
+    display: flex;
+    margin-right: 60px;
+    justify-content: flex-end;
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+.links-nav{
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+    margin-left: 14px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+a:hover{
+    color:rgb(245, 1, 87);
+}
+
+
+#link-seleccionado{ /* link Contacto con color*/
+    background-color:rgb(245, 1, 87);
+    border-radius: 50px;
+    color:white;
+    border-style: none;
+    text-align: center;
+    padding: 10px 24px;  
+}
+
+
+.contenedor-portada{
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 68px;
+}
+.texto-destacado{
+    font-size: 3em;
+    color: rgb(245, 1, 87);
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin:0;
+    font-weight: 800;
+}
+
+.texto-saludo{
+    font-size: 2em;
+    font-weight: 600;
+}
+.texto-descripcion{
+    font-size: 1em;
+    
+}
+.boton-portada{
+    background-color: rgb(245, 1, 87);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 25px;
+    width: 180px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contenedor-texto{
+    flex-direction: column;
+    padding: 20px;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+/* Seccion Skills*/
+.contenedor-skills{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke; 
+    padding: 110px 40px 130px;
+}
+
+.titulo-skills{
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.texto-skills{
+    font-size: 1em;
+    width: 400px;  
+
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.grid-item{
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid rgb(212, 212, 212);
+    padding: 30px;
+    margin: 10px;
+}
+
+.grid-item:hover{
+    border: 1px solid rgb(245, 1, 87);
+    color: rgb(245, 1, 87);
+}
+
+.icono-skill{
+    width: 70px;
+    height: 70px;
+    
+}
+
+.descripcion-skill{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+/**Seccion someone*******/
+.contenedor-someone{
+    align-items: center;
+    text-align: center;
+}
+.icono-quote{
+    width: 84px;
+    height: 74px;
+}
+
+/** Footer **/
+footer{
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+.footer{
+    background-color:rgb(245, 1, 87);
+    display: block;
+    justify-content: center;  
+    padding: 80px 20px 60px;
+    align-items: center;
+    color: white;
+    text-align: center;
+     
+}
+
+.container-link-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.link-footer{
+    color: white;
+    text-decoration: none;
+    margin-left: 14px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+.item-icono{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.imagen-icono{
+    width: 30px;
+    height: 30px;
+    
+    
+}
+
+.contenedor-iconos > .item-icono:hover{
+    background-color: rgb(245, 1, 87);
+    border: 1px solid white;
+}
+
+/****** Responsive *******/
+
+@media screen and (max-width:800px) and (min-width:300px){
+    header{
+        box-shadow: none;
+    }
+
+    .contenedor-links{
+        display: none;
+       
+    }
+    
+    .contenedor-portada{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: white;
+    }
+
+    .contenedor-texto{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:700px) {
+    .container-link-footer{
+        display: none;
+    }
+   
+}
