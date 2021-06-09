@@ -92,7 +92,7 @@ a:hover{
 
 .contenedor-texto{
     flex-direction: column;
-    padding: 20px;
+    padding: 60px 50px 50px;
 }
 
 img{
@@ -100,7 +100,7 @@ img{
     height: 500px;
 }
 
-/* Seccion Skills*/
+/* Seccion Skills - titulo y texto comparte clase con proyectos*/
 .contenedor-skills{
     display: flex;
     text-align: center;
@@ -110,12 +110,12 @@ img{
     padding: 110px 40px 130px;
 }
 
-.titulo-skills{
+.titulo {
     font-size: 3em;
     font-weight: 800;
 }
 
-.texto-skills{
+.texto{
     font-size: 1em;
     width: 400px;  
 
