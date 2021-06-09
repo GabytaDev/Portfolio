@@ -100,7 +100,7 @@ img{
     height: 500px;
 }
 
-/* Seccion Skills - titulo y texto comparte clase con proyectos*/
+/* Seccion Skills - titulo y texto comparten clases con pryectos)*/
 .contenedor-skills{
     display: flex;
     text-align: center;
@@ -126,7 +126,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
 }
 
 .grid-item{
@@ -138,7 +138,7 @@ img{
     margin: 10px;
 }
 
-.grid-item:hover{
+.grid-item , .grid-item-proyectos:hover{
     border: 1px solid rgb(245, 1, 87);
     color: rgb(245, 1, 87);
 }
@@ -182,10 +182,31 @@ img{
 
 /** Seccion proyectos **/
 .contenedor-proyectos{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 570px;
     background-color: white ;
+    align-content: center;
+}
+
+.grid-item-proyectos{
+    width: 340px;
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid rgb(212, 212, 212);
+    padding: 20px;
+    margin: 10px;
+}
+
+.imagen-proyecto{
+    width: 200px;
+    height: 200px;
+}
+
+.descripcion-proyecto{
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 /** Footer **/
