@@ -154,14 +154,38 @@ img{
     font-weight: 700;
 }
 
-/**Seccion someone*******/
+/**Seccion someone - quote *******/
 .contenedor-someone{
     align-items: center;
     text-align: center;
+    background-color:rgb(245, 1, 87) ;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.seccion-width{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.seccion-quote{
+    text-align: center;
+    padding: 160px 80px;
+    align-items: center; 
+    font-size: 1.3em;
 }
 .icono-quote{
     width: 84px;
     height: 74px;
+}
+
+/** Seccion proyectos **/
+.contenedor-proyectos{
+    align-items: center;
+    text-align: center;
+    height: 570px;
+    background-color: white ;
 }
 
 /** Footer **/
