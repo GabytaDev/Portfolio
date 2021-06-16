@@ -10,7 +10,7 @@ html, body{
    
 }
 
-header{
+.nav{
     background-color: rgb(255, 255, 255);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -126,7 +126,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
 }
 
 .grid-item{
@@ -188,8 +188,20 @@ img{
     text-align: center;
     background-color: white ;
     align-content: center;
+    justify-content: center;
 }
-
+.contenedor-grilla{
+    display: flex;
+    width: 75%;
+    
+}
+.grid-container-proyectos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
 .grid-item-proyectos{
     width: 340px;
     background-color: white;
@@ -272,7 +284,7 @@ footer{
 /****** Responsive *******/
 
 @media screen and (max-width:800px) and (min-width:300px){
-    header{
+    .nav{
         box-shadow: none;
     }
 
