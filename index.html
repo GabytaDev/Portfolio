@@ -15,18 +15,20 @@
     <nav class="nav">
         <div class="contenedor-links">
             <ul>
-                <a class="links-nav" href="#">HOLA</a>
+                <a class="links-nav" href="#portada">HOLA</a>
                 
-                <a class="links-nav" href="#">CONOCIMIENTOS</a>
+                <a class="links-nav" href="#conocimientos">CONOCIMIENTOS</a>
                 
-                <a class="links-nav" href="#">PROYECTOS</a>
-                <span><a class="links-nav" href="#"  id="link-seleccionado">CONTACTO</a></span>       
+                <a class="links-nav" href="#proyectos">PROYECTOS</a>
+                <span><a class="links-nav link-seleccionado" href="#contacto">CONTACTO</a></span>       
             </ul>
         </div>
         
     </nav>
     <!--comienza seccion lo que hago-->
-    <section class="contenedor-portada"> 
+    <a name="portada"></a> 
+    <section class="contenedor-portada">
+        
         <div class="contenedor-texto">
             <p class="texto-saludo">¡Hola! Soy </p>
             <h1 class="texto-destacado">Gabriela Loyola Carpio</h1>
@@ -38,8 +40,9 @@
 
     
     <!--comienza seccion mis conocimientos (skills)-->  
-    <section class="contenedor-skills">
-
+    <a name="conocimientos"></a>
+    <section class="contenedor-skills"> 
+        
         <h2 class="titulo">Mis Conocimientos</h2>
         <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>
 
@@ -84,6 +87,7 @@
 
     <!--comienza seccion someone - quote-->
     <section class="contenedor-someone">
+        
         <div class="seccion-width seccion-quote">
             <img class="icono-quote" src="./imagenes/quote-right-solid.svg" alt="">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repellat eveniet inventore sed, laboriosam facere neque nemo aliquid placeat dignissimos voluptatibus sapiente ratione voluptas eius veritatis rem consequuntur ipsa veniam!</p>
@@ -96,7 +100,9 @@
 
         
     <!--seccion mis proyectos-->
+    <a name="proyectos"></a>
     <section class="contenedor-proyectos">
+       
         <div >
             <h2 class="titulo">Mis Proyectos</h2>    
             <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>    
@@ -145,14 +151,43 @@
 
         
     <!--seccion contacto-->
+    <a name="contacto"></a>
+
     <section class="seccion-contacto">
+        
         <div class="contenedor-contacto">
             <div class="contenedor-contactame">
+                <h2>Contactame</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
+                
+                <div class="lista-links-contactos">
+
+                </div>
 
             </div>
     
             <div class="contenedor-escribime">
-    
+                <h2>Escribime</h2>
+                <form action="#" class="formulario">
+                    <div>
+                        <label for="">Nombre *
+                            <input type="text" placeholder="p.ej.: Ana">
+                        </label>
+                        <label for="">Apellido *
+                            <input type="text" placeholder="p.ej.:Lopez">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">E mail *
+                            <input class="input-mail" type="email" placeholder="p.ej.:analopez@gmail.com">
+                        </label>
+                    </div>
+                    <div >
+                        <label class="text-area" for="">Mensaje * </label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un mensaje aquí"></textarea>
+                    </div>
+                    
+                </form>
             </div>
         </div>
         
