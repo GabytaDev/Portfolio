@@ -346,6 +346,38 @@ input, textarea{
     display: block;
 }
 
+/* link redes sociales contactame*/
+
+.link-redes-sociales{
+    margin-top: 40px;
+}
+
+.item-redes-sociales{
+   margin: 10px 0;
+
+}
+.icono-redes-sociales{
+    font-size: 20px;
+}
+.icono-redes-sociales:hover{
+    color: rgb(245, 1, 87);
+}
+
+.fa-twitter{
+    color: rgb(245, 1, 87);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.fa-twitter:hover{
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(245, 1, 87); 
+    padding: 8px;
+    
+}
+
 /** Footer **/
 footer{
     display: flex;
