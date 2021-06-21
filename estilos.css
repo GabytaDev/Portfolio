@@ -286,7 +286,7 @@ a{
     border:1px solid rgb(221, 221, 221);
     width: 75%;
     display: flex;
-    padding: 50px 10px;
+    padding: 50px 30px;
     
 }
 
@@ -308,9 +308,6 @@ a{
 .dato-name{
     display: flex;
     flex-direction: column;
-    
-    
-
 }
 .datos-personales{
     display: flex;
@@ -319,8 +316,6 @@ a{
     margin-bottom: 12px;
     margin-top: 12px;
 }
-
-
 
 label{
     margin-top: 10px;
@@ -354,29 +349,35 @@ input, textarea{
 
 .item-redes-sociales{
    margin: 10px 0;
+  
 
+}
+.content-link-redes{
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    
 }
 .icono-redes-sociales{
-    font-size: 20px;
-}
-.icono-redes-sociales:hover{
-    color: rgb(245, 1, 87);
-}
-
-.fa-twitter{
-    color: rgb(245, 1, 87);
     font-size: 18px;
-    transition: 0.2s;
 }
 
-.fa-twitter:hover{
-    color: #ffffff;
-    border: 1px solid;
-    border-radius: 50%;
-    background-color: rgb(245, 1, 87); 
+.fa-twitter , .fa-github-alt , .fa-linkedin-in , .fa-envelope{
+    color: rgb(245, 1, 87);
+    font-size: 20px;
+    margin: 5px;
     padding: 8px;
     
 }
+
+.content-link-redes >i:hover{
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: rgb(245, 1, 87);     
+}
+
+ 
+
 
 /** Footer **/
 footer{
