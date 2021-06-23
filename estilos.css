@@ -41,7 +41,7 @@ ul{
     cursor: pointer;
 }
 
-a:hover{
+.links-nav:hover{
     color:rgb(245, 1, 87);
 }
 
@@ -49,12 +49,16 @@ a:hover{
 .link-seleccionado{ /* link Contacto con color*/
     background-color:rgb(245, 1, 87);
     border-radius: 50px;
-    color:white;
+    color:#ffffff;
     border-style: none;
     text-align: center;
     padding: 10px 24px;  
 }
 
+.link-seleccionado:hover{
+    background-color:rgb(236, 100, 148) ;
+    color: #ffffff;
+}
 
 .contenedor-portada{
     background-color: #f0f0f0;
@@ -224,18 +228,24 @@ img{
     align-content: center;
     justify-content: center;
     margin-bottom: 40px; /* ver si despues necesita mas margen*/
+    width: 100%;
 }
 .contenedor-grilla{
     display: flex;
-    width: 80%;
-    
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;    
 }
 .grid-container-proyectos{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: start;
-    
+    width: 100%;
+    align-content: flex-start;
 }
 
 .grid-item-proyectos{
@@ -418,7 +428,7 @@ footer{
 
 
 .item-icono{
-    background-color: white;
+    background-color: #ffffff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -426,54 +436,147 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-}
-.imagen-icono{
-    width: 30px;
-    height: 30px;
     
     
 }
 
-.contenedor-iconos > .item-icono:hover{
+ .contenedor-iconos > .item-icono:hover{
     background-color: rgb(245, 1, 87);
-    border: 1px solid white;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+} 
+
+/********** Responsive **************************/
+@media screen and (max-width:1200px) {
+    .seccion-contacto{
+        background-color: transparent;
+        border-radius: none;
+        border:none;  
+    }
+
+    .contenedor-contacto{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: transparent;
+        border-radius: none;
+        border:none;  
+    }
+    .contenedor-contactame, .contenedor-escribime{
+        width: 100%;
+    }
 }
 
-/****** Responsive *******/
+@media screen and (max-width:900px) {
+   
+    .contenedor-proyectos{
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .contenedor-grilla{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+    } 
+} 
 
-@media screen and (max-width:800px) and (min-width:300px){
+@media screen and (max-width:800px){
     .nav{
         box-shadow: none;
     }
 
     .contenedor-links{
         display: none;
-       
     }
     
     .contenedor-portada{
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
-        
+        align-items: center;
+        flex-wrap: wrap;
         background-color: white;
+        width: 100%;
     }
 
     .contenedor-texto{
-        justify-content: center;
         align-items: center;
         text-align: center;
     }
     
+    .contenedor-skills{
+        width: 100%;
+        
+    }
+    .contenedor-someone{
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .seccion-width , .seccion-quote{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenedor-proyectos{
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-grilla{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+   .grid-container-proyectos{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contenedor-contacto{
+        width: 100%;
+
+    }
+    .contenedor-contactame{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
     
-    
+
+    .link-redes-sociales{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .item-redes-sociales{
+        width: 50%;
+    }
+    .contenedor-escribime{
+        width: 100%;
+    }
 }
+
+
+
+
+
 
 @media screen and (max-width:700px) {
     .container-link-footer{
         display: none;
+    }
+
+    h2{
+        font-size: 40px;
     }
    
 }
