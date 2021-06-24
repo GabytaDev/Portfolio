@@ -475,7 +475,7 @@ footer{
 } 
 
 /********** Responsive **************************/
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1200px){
     .seccion-contacto{
         background-color: transparent;
         border-radius: none;
@@ -502,7 +502,14 @@ footer{
         align-content: center;
         flex-direction: column;
     }
-    
+    .contenedor-contacto{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .contenedor-contactame, .contenedor-escribime{
+        width: 100%;
+    }
     .contenedor-grilla{
         flex-direction: column;
         justify-content: center;
@@ -570,6 +577,7 @@ footer{
     }
     .contenedor-contacto{
         width: 100%;
+        flex-direction: column;
 
     }
     .contenedor-contactame{
@@ -648,7 +656,7 @@ footer{
         flex-wrap: wrap;
     }
     .texto{
-      max-width: 300px;
+      max-width: 400px;
     
     }
     
