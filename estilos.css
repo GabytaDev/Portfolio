@@ -381,6 +381,9 @@ input, textarea{
 .icono-redes-sociales{
     font-size: 18px;
 }
+.content-link-redes:hover{
+    color:rgb(245, 1, 87) ;
+} 
 
 .fa-twitter , .fa-github-alt , .fa-linkedin-in , .fa-envelope{
     color: rgb(245, 1, 87);
@@ -390,7 +393,7 @@ input, textarea{
     
 }
 
-.content-link-redes >i:hover{
+.icono-redes-sociales:hover > i{
     color: #ffffff;
     border-radius: 50%;
     background-color: rgb(245, 1, 87);     
@@ -648,6 +651,7 @@ footer{
        width: 100%;
    }  
    .seccion-contacto{
+       width: 100%;
        padding: 1em;
    }
    .contenedor-contacto{
@@ -661,6 +665,9 @@ footer{
 }
    .link-redes-sociales{
        flex-direction: column;
+       width: 100%;
    }
-   
+   .item-redes-sociales{
+       width: 100%;
+   }
 }
