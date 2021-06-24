@@ -598,10 +598,6 @@ footer{
    .contenedor-skills{
        width: 100%;
    }
-   .grid-container{
-       width: 100%;
-       padding: 30px 0;
-   }
     
     .container-link-footer{
         display: none;
@@ -613,26 +609,41 @@ footer{
    
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:550px) and (min-width:300px){
     .texto-destacado{
         font-size: 2em;
     }
     .titulo{
         font-size: 2em;
     }
+    .contenedor-portada{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+    }
+    .contenedor-texto{
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        padding: 50px 30px;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
     .contenedor-skills{
-        width: 100%;
+      width: 100%;
+       
     }
-    .grid-container{ 
-        display: flex;   /* grilla skills*/
-        width: 100%;
-        padding: 30px 0;
+    .texto{
+      max-width: 400px;
+    
     }
-    .grid-item{
-        align-content: center;
-        width: 30%;
-        
-    }
+    
    .grid-item-proyectos{
        width: 100%;
    }  
@@ -642,6 +653,14 @@ footer{
    .contenedor-contacto{
        width: 100%;
        padding: 0;
+   }
+   .contenedor-contactame{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+   .link-redes-sociales{
+       flex-direction: column;
    }
    
 }
