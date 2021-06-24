@@ -635,12 +635,17 @@ footer{
         padding: 50px 30px;
     }
     img{
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
     }
     .contenedor-skills{
       width: 100%;
        
+    }
+    .grid-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .texto{
       max-width: 400px;
