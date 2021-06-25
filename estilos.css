@@ -222,10 +222,10 @@ img{
     align-items: center; 
     font-size: 1.3em;
 }
-.icono-quote{
-    width: 84px;
-    height: 74px;
+.fa-quote-right{
+    font-size: 70px;
 }
+
 
 /** Seccion proyectos **/
 .contenedor-proyectos{
