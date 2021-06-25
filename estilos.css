@@ -205,8 +205,8 @@ img{
 .contenedor-someone{
     align-items: center;
     text-align: center;
-    background-color:rgb(245, 1, 87) ;
-    color: white;
+    background-color:#f50157 ;
+    color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -328,6 +328,7 @@ a{
 .dato-name{
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
 }
 .datos-personales{
     display: flex;
@@ -346,13 +347,21 @@ label{
 input, textarea{
     padding:10px 8px;
     border-radius: 20px;
-    border:none;
+    border:1px solid rgb(245, 247, 251);
     background-color: rgb(245, 247, 251);
     color: rgb(109, 108, 108);
     width: 100%;
     margin-top: 10px;
-    
+    outline: none;
+   
 }
+input:focus{
+    box-shadow: 0px 0px 8px 1px rgb(235 151 180);
+}
+textarea:focus{
+    box-shadow: 0px 0px 8px 1px rgb(235 151 180);
+}
+
 
 .input-mail{
     width: 100%;
