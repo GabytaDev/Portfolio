@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
+body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -25,8 +24,8 @@ html, body{
     display: flex;
     margin-right: 60px;
     justify-content: flex-end;
-    
 }
+
 .links-nav:focus{
     box-shadow:0px 0px 8px 1px rgb(235, 151, 180);
 }
@@ -156,43 +155,30 @@ img{
     color: rgb(245, 1, 87);
 }
 
-
-.fa-html5{
+.fab{
     width: 70px;
     height: 70px; 
-    color: rgb(229, 77, 39);
     font-size: 70px;
 }
+
+.fa-html5{
+    color: rgb(229, 77, 39);
+}
 .fa-css3-alt{
-    width: 70px;
-    height: 70px; 
     color: rgb(60, 139, 193);
-    font-size: 70px; 
 }
 
 .fa-sass{
-    width: 70px;
-    height: 70px; 
     color: rgb(203, 102, 153);
-    font-size: 70px; 
 }
 .fa-js{
-    width: 70px;
-    height: 70px; 
-    color: rgb(239, 219, 80);
-    font-size: 70px;   
+    color: rgb(239, 219, 80);    
 }
-.fa-react{
-    width: 70px;
-    height: 70px; 
-    color: rgb(94, 215, 247);
-    font-size: 70px;   
+.fa-react{  
+    color: rgb(94, 215, 247);  
 }
 .fa-git-alt{
-    width: 70px;
-    height: 70px; 
-    color: rgb(242, 79, 39);
-    font-size: 70px; 
+    color: rgb(242, 79, 39);  
 }
 
 .descripcion-skill{
@@ -312,9 +298,7 @@ a{
 
 .contenedor-contactame{
     padding: 10px;
-    width: 50%;
-
-    
+    width: 50%;   
 }
 
 .contenedor-escribime{
@@ -361,7 +345,6 @@ input:focus{
 textarea:focus{
     box-shadow: 0px 0px 8px 1px rgb(235 151 180);
 }
-
 
 .input-mail{
     width: 100%;
@@ -617,8 +600,12 @@ footer{
 @media screen and (max-width:700px) {
    .contenedor-skills{
        width: 100%;
-   }
+    }
     
+   
+  .grid-container{
+      width: 100%;
+    }
     .container-link-footer{
         display: none;
     }
