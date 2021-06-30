@@ -155,11 +155,12 @@ img{
     color: rgb(245, 1, 87);
 }
 
-.fab{
+.grid-item > .fab{
     width: 70px;
     height: 70px; 
     font-size: 70px;
 }
+
 
 .fa-html5{
     color: rgb(229, 77, 39);
