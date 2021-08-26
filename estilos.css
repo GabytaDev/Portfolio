@@ -17,7 +17,6 @@ body{
     box-shadow: 2px 0px 8px 0 rgb(0 0 0 / 20%);
     position: fixed;
     top:0;
-    
 }
 
 .contenedor-links{
@@ -63,7 +62,37 @@ ul{
     background-color:rgb(236, 100, 148) ;
     color: #ffffff;
 }
+ /* menu oculto para vista mobile */
 
+.menu-mobile{ 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    padding: 30px 0 0 20px;
+    background-color:rgb(212, 212, 212);
+    position: fixed;
+    right:0px;
+    top: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ocultar-menu-mobile{
+    width: 0;  
+}
+.fa-times{
+    font-size: 18px;
+    margin: 10px;
+}
+.contenedor-links > h2{
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Estilos portada  */
 .contenedor-portada{
     background-color: #f0f0f0;
     width: 100%;
@@ -469,6 +498,32 @@ footer{
 
 /********** Responsive **************************/
 @media screen and (max-width:1200px){
+    .nav{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+    .ocultar-menu-mobile{
+        display: none;
+        width: 300px;  
+        
+    }
+    
+    .contenedor-links ul{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        
+        
+    }
+    .contenedor-links{
+        display: flex;
+    }
+    .links-nav{
+        margin-top: 10px
+    }
+    
     .seccion-contacto{
         background-color: transparent;
         border-radius: none;
@@ -486,10 +541,22 @@ footer{
     .contenedor-contactame, .contenedor-escribime{
         width: 100%;
     }
+    .menu-hamburguesa{
+        display: flex;
+        /* aparece menu hanburguesa */
+    }
+    .fa-bars{
+        font-size: 24px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
 }
 
 @media screen and (max-width:900px) {
-   
+.contenedor-links{
+      display: flex;
+}
     .contenedor-proyectos{
         justify-content: center;
         align-content: center;
@@ -512,14 +579,33 @@ footer{
 } 
 
 @media screen and (max-width:800px){
+    /* menu y boton para vista mobile */
+/* agregar icono de apertura de menu */
     .nav{
-        box-shadow: none;
-    }
-
-    .contenedor-links{
         display: none;
+        
     }
     
+    .links-nav:focus{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .contenedor-links ul{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .link-seleccionado:hover{
+        background-color:transparent;
+        color:rgb(245, 1, 87);
+    }
+
+    
+    /* Seccion lo que hago */
     .contenedor-portada{
         flex-direction: column;
         justify-content: center;

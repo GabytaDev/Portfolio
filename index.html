@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,81 +9,109 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="icon" type="" href="./imagenes/favicon.ico">
 </head>
+
 <body>
     <nav class="nav">
         <div class="contenedor-links">
             <ul>
                 <a class="links-nav" href="#portada">HOLA</a>
-                
+
                 <a class="links-nav" href="#conocimientos">CONOCIMIENTOS</a>
-                
+
                 <a class="links-nav" href="#proyectos">PROYECTOS</a>
-                <span><a class="links-nav link-seleccionado" href="#contacto">CONTACTO</a></span>       
+                <span><a class="links-nav link-seleccionado" href="#contacto">CONTACTO</a></span>
             </ul>
         </div>
-        
     </nav>
+    <!-- Menu mobile -->
+    <nav class="menu-hamburguesa">
+        <i class="fas fa-bars"></i>
+    </nav>
+
+    <div class="menu-mobile ocultar-menu-mobile">
+        <i class="fas fa-times"></i>
+            <div class="contenedor-links">
+                
+                <ul>
+                    <h2>Secciones</h2>
+                    
+                    <a class="links-nav" href="#portada">HOLA</a>
+
+                    <a class="links-nav" href="#conocimientos">CONOCIMIENTOS</a>
+
+                    <a class="links-nav" href="#proyectos">PROYECTOS</a>
+                    
+                    <a class="links-nav" href="#contacto">CONTACTO</a>
+                </ul>
+            </div>
+    </div>
+
+
+
     <!--comienza seccion lo que hago-->
-    <a name="portada"></a> 
+    <a name="portada"></a>
     <section class="contenedor-portada">
-        
+
         <div class="contenedor-texto">
             <p class="texto-saludo">¡Hola! Soy </p>
             <h1 class="texto-destacado">Gabriela Loyola Carpio</h1>
             <p class="texto-descripcion">Desarrolladora Frontend, creativa y fan del diseño</p>
             <a class="boton-portada" href="#proyectos">LO QUE HAGO</a>
-            
-            
+
+
         </div>
         <img src="./imagenes/undraw_wireframing_nxyi.svg" alt="draw-woman-code">
     </section>
 
-    
-    <!--comienza seccion mis conocimientos (skills)-->  
+
+    <!--comienza seccion mis conocimientos (skills)-->
     <a name="conocimientos"></a>
-    <section class="contenedor-skills"> 
-        
+    <section class="contenedor-skills">
+
         <h2 class="titulo">Mis Conocimientos</h2>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam
+            delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>
 
         <div class="grid-container">
 
             <div class="grid-item">
-                
+
                 <i class="fab fa-html5"></i>
                 <p class="descripcion-skill">HTML 5</p>
             </div>
 
             <div class="grid-item">
-                
+
                 <i class="fab fa-css3-alt"></i>
                 <p class="descripcion-skill">Css 3</p>
             </div>
             <div class="grid-item">
-                
+
                 <i class="fab fa-sass"></i>
                 <p class="descripcion-skill">Sass</p>
             </div>
             <div class="grid-item">
-                
+
                 <i class="fab fa-js"></i>
                 <p class="descripcion-skill">JavaScript</p>
             </div>
             <div class="grid-item">
-                
+
                 <i class="fab fa-react"></i>
                 <p class="descripcion-skill">React</p>
             </div>
             <div class="grid-item">
-                
+
                 <i class="fab fa-git-alt"></i>
                 <p class="descripcion-skill">Git</p>
             </div>
-            
+
         </div>
 
     </section>
@@ -90,25 +119,28 @@
 
     <!--comienza seccion someone - quote-->
     <section class="contenedor-someone">
-        
+
         <div class="seccion-width seccion-quote">
             <i class="fas fa-quote-right"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repellat eveniet inventore sed, laboriosam facere neque nemo aliquid placeat dignissimos voluptatibus sapiente ratione voluptas eius veritatis rem consequuntur ipsa veniam!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repellat eveniet inventore sed,
+                laboriosam facere neque nemo aliquid placeat dignissimos voluptatibus sapiente ratione voluptas eius
+                veritatis rem consequuntur ipsa veniam!</p>
             <h2>Someone</h2>
         </div>
-        
 
-        
+
+
     </section>
 
-        
+
     <!--seccion mis proyectos-->
     <a name="proyectos"></a>
     <section class="contenedor-proyectos">
-       
-        <div >
-            <h2 class="titulo">Mis Proyectos</h2>    
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>    
+
+        <div>
+            <h2 class="titulo">Mis Proyectos</h2>
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi, sequi ipsa laboriosam
+                delectus nobis, fuga Consectetur culpa dolor obcaecati modi.</p>
         </div>
 
         <div class="contenedor-grilla">
@@ -118,75 +150,77 @@
                     <img class="imagen-proyecto" src="./imagenes/undraw_wireframing_nxyi.svg" alt="imagen">
                     <p class="descripcion-proyecto">Portfolio</p>
                 </a>
-                
+
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_elements_cipa.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_elements_cipa.svg" alt="imagen">
                     <p class="descripcion-proyecto">Generador de memes</p>
                 </a>
-                
+
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_gaming_6oy3.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_gaming_6oy3.svg" alt="imagen">
                     <p class="descripcion-proyecto">Match 3</p>
                 </a>
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_Savings_re_eq4w.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_Savings_re_eq4w.svg" alt="imagen">
                     <p class="descripcion-proyecto">Controlador de gastos</p>
                 </a>
-                
+
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_events_2p66.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_events_2p66.svg" alt="imagen">
                     <p class="descripcion-proyecto">Administrador de Reuniones</p>
                 </a>
-                
+
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_Online_article_re_daq5.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_Online_article_re_daq5.svg" alt="imagen">
                     <p class="descripcion-proyecto">Todo App</p>
                 </a>
                 <a class="grid-item-proyectos" href="#" target="_blank">
-                    <img class="imagen-proyecto" src="./imagenes/undraw_video_files_fu10.svg"  alt="imagen">
+                    <img class="imagen-proyecto" src="./imagenes/undraw_video_files_fu10.svg" alt="imagen">
                     <p class="descripcion-proyecto">Buscador de peliculas</p>
                 </a>
-                
+
             </div>
         </div>
 
     </section>
 
-        
+
     <!--seccion contacto-->
     <a name="contacto"></a>
 
     <section class="seccion-contacto">
-        
+
         <div class="contenedor-contacto">
             <div class="contenedor-contactame">
                 <h2 class="titulo">Contactame</h2>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
-                
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum
+                    tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam,
+                    tempora eaque numquam eligendi.</p>
+
                 <div class="lista-links-contactos">
                     <ul class="link-redes-sociales">
                         <li class="item-redes-sociales">
-                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales" >
+                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales">
                                 <i class="fab fa-twitter"></i>
                                 @Gabytas09
                             </a>
-                            
+
                         </li>
 
-                        <li class="item-redes-sociales" >
-                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales" >
+                        <li class="item-redes-sociales">
+                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales">
                                 <i class="fab fa-github-alt"></i>
                                 GabytaDev
                             </a>
                         </li>
                         <li class="item-redes-sociales">
-                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales" >
+                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales">
                                 <i class="fab fa-linkedin-in"></i>
                                 Gabriela Loyola Carpio
                             </a>
                         </li>
-                        <li class="item-redes-sociales" >
-                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales" >
+                        <li class="item-redes-sociales">
+                            <a href="#" target="blank" class="content-link-redes icono-redes-sociales">
                                 <i class="fas fa-envelope"></i>
                                 gabyta.loyola@gmail.com
                             </a>
@@ -195,7 +229,7 @@
                 </div>
 
             </div>
-    
+
             <div class="contenedor-escribime">
                 <h2 class="titulo">Escribime</h2>
                 <form action="#" class="formulario">
@@ -210,23 +244,23 @@
                                 <input type="text" placeholder="p.ej.: Lopez">
                             </label>
                         </div>
-                        
+
                     </div>
                     <div>
                         <label for="">E mail *
                             <input class="input-mail" type="email" placeholder="p.ej.:analopez@gmail.com">
                         </label>
                     </div>
-                    <div >
+                    <div>
                         <label class="area-de-texto" for="">Mensaje * </label>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un mensaje aquí"></textarea>
                     </div>
                     <button type="submit" class="boton-enviar-formulario">Enviar</button>
-                    
+
                 </form>
             </div>
         </div>
-        
+
 
     </section>
 
@@ -237,15 +271,15 @@
                 <ul>
                     <a class="link-footer" href="#">HOLA</a>
                 </ul>
-    
+
                 <ul>
                     <a class="link-footer" href="#">CONOCIMIENTOS</a>
                 </ul>
-    
+
                 <ul>
                     <a class="link-footer" href="#">PROYECTOS</a>
                 </ul>
-    
+
                 <ul>
                     <a class="link-footer" href="#">CONTACTO</a>
                 </ul>
@@ -259,36 +293,35 @@
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
-    
+
                     <li class="item-icono">
-                        <a href="#" class="content-link-redes icono-redes-sociales"v>
+                        <a href="#" class="content-link-redes icono-redes-sociales" v>
                             <i class="fab fa-github-alt"></i>
                         </a>
                     </li>
-    
+
                     <li class="item-icono">
                         <a href="#" class="content-link-redes icono-redes-sociales">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-    
+
                     <li class="item-icono">
                         <a href="#" class="content-link-redes icono-redes-sociales">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
-               
+
             </div>
-               
+
             <p>Hecho con 🤍 , 💪 y mucho 🧉 por Gaby</p>
-            
+
         </div>
 
     </footer>
-    
+    <script src="index.js"></script>
 </body>
 
 
 </html>
-
