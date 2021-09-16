@@ -5,6 +5,7 @@ Aquí podrás hacer un recorrido por los trabajos que estoy realizando, ver las 
 ### Tecnologías que voy utilizando hasta ahora:
 - HTML
 - CSS
+- JAVASCRIPT
 
 ### Puedes ver el proyecto en este link
 [Ver el proyecto]( https://gabytadev.github.io/Portfolio/)
